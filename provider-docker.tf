@@ -7,11 +7,6 @@ terraform {
   }
 }
 
-#provider "docker" {
-#  host = "unix:///var/run/docker.sock"
-#}
-
 provider "docker" {
-  version = "~> 2.7"
-  host    = "npipe:////.//pipe//docker_engine"
+  host = "unix:///var/run/docker.sock"
 }
